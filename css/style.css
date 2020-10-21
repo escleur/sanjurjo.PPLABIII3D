@@ -1,0 +1,185 @@
+body{
+    background-color: #fbf2eb;
+    
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 10px 10px 5px grey;
+    margin: 2rem;
+}
+table, tr, td{
+    border: 1px solid black;
+
+}
+th{
+    background-color: royalblue;
+    color: white;
+    border: 1px solid black;
+}
+td{
+    padding: 5px;
+}
+tr:nth-of-type(odd){
+    background-color: white;
+}
+tr:nth-of-type(even){
+    background-color:#bbd7f1;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+form label{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+form fieldset{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+form input{
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+}
+form input:focus{
+    outline: none;
+    background-color: #fff5db;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+nav{
+    align-self: flex-end;
+    
+}
+nav ul{
+    display: flex;
+
+    list-style: none;
+}
+
+nav ul li{
+
+    
+    padding: 1rem;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header, footer{
+    background-color: rgb(180, 126, 10);
+    
+}
+footer{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.portada{
+    background-image: url("../img/portada.jpg");
+    height: 20rem;
+    background-size: cover;
+}
+
+#alta{
+    border: 1px solid green;
+}
+#modificar{
+    border: 1px solid cornflowerblue;
+}
+#baja{
+    border: 1px solid red;
+
+}
+#cancelar{
+    border: 1px solid black;
+
+}
+#alta:hover{
+    color: white;
+    background-color: green;
+}
+#modificar:hover{
+    color: white;
+    background-color: cornflowerblue;
+}
+#baja:hover{
+    color: white;
+    background-color: red;
+
+}
+#cancelar:hover{
+    color: white;
+    background-color: black;
+
+}
+.botones {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spinner,.spinner:after{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 10rem;
+ }
+.spinner {
+    background-color: transparent;
+    border-top: 5px solid rgb(66,139,202);
+    border-right: 5px solid rgb(66,139,202);
+    border-bottom: 5px solid rgb(66,139,202);
+    border-left: 5px solid rgba(66,139,202,.2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: .8s;
+    animation-name: spinner-loading
+ }
+@keyframes spinner-loading{
+  0% {
+      transform: rotate(0deg)
+  } to {
+      transform: rotate(1turn)
+  }
+}
+
+@media(min-width: 800px){
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+ 
+}
